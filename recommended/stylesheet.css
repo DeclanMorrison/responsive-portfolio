@@ -1,0 +1,252 @@
+/* Colors:
+    - Orange: F06449;
+    - White: F5F1EF;
+    - Grey: DADAD9;
+    - Light Light Text: 9FAFB6;
+    - Light Text: 4F6D7A;
+    - Dark Text: 151515; */
+
+/* 
+
+I organize my CSS as such:
+ - Position, Top, Bottom, Left, Right
+ - Float, Clear
+ - Width, Height
+ - Text, Font
+ - Color, Background Color
+ - Padding
+ - Border
+ - Margins
+ - Additional Stylings, in alphabetical order
+
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab');
+
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+body{
+    text-align: center;
+    background-color: #DADAD9;
+    margin: 0px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.nav-bar{
+    position: sticky;
+    top: 0px;
+    background-color: #F9F7F6;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 10%;
+    padding-right: 10%;
+    box-shadow: 0px 3px #B3B3B2;
+}
+
+.name-card{
+    position: relative;
+    top: -31px;
+    float: left;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Roboto Slab', serif;   
+    color: #F9F7F6;
+    background-color: #F06449;
+    padding: 18px 15px;
+}
+
+.nav-item{
+    position: relative;
+    top: -9px;
+    float: right;
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    text-decoration: none;
+    color: #9FAFB6;   
+    padding: 0px 7px;
+    border-color: #9FAFB6;
+    border-width: 1px;
+    border-style: solid;
+    border-top-width: 0px;
+    border-bottom-width: 0px;
+}
+
+div a:nth-child(1){
+    border-right-width: 0px;
+}
+
+div a:nth-child(3){
+    border-left-width: 0px;
+}
+
+.content{
+    float: left;
+    clear: both;
+    width: 40%;
+    background-color: #F9F7F6;
+    padding: 30px 40px;
+    margin: 0% 0% 0% 10%;
+    margin-top: 30px;
+    box-shadow: 3px 3px #B3B3B2;
+    overflow: auto;
+}
+
+.about{
+    clear: none;
+}
+
+img{
+    float: left;   
+    margin-right: 15px;
+}
+
+hr{
+    clear: both;
+    height: 2px;
+    background-color: #C7C7C6;
+    margin-bottom: 20px;
+    border: 0px;
+}
+
+h1{
+    float: left;
+    clear: both;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Roboto Slab', serif;
+    color: #F06449;
+    margin-bottom: 15px;
+}
+
+p{
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.3; 
+    color: #4F6D7A;
+}
+
+form{
+    text-align: left;
+    font-family: 'Roboto', sans-serif;  
+    color: #4F6D7A;
+}
+
+input[type=text], select, textarea{
+    font-family: monospace;
+    font-size: 14px;
+    color: #757575;
+    background-color: #F9F7F6;
+    padding: 2px;  
+    margin: 15px;
+    margin-top: 5px;
+    border: none;
+    border-bottom: 2px solid #F06449;  
+    outline: none;
+    resize: none;
+}
+
+input[type=text]:focus, select:focus, textarea:focus{
+    background-color: white;
+}
+
+textarea{
+    width: auto;
+}
+
+input[type=submit]{
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+    text-decoration: none;
+    background-color: #F06449;  
+    color: #F9F7F6;
+    padding: 10px 30px;
+    margin-left: 15px;
+    border: none;   
+    cursor: pointer;
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+}
+
+input[type=submit]:hover{
+    font-family: 'Roboto Slab', serif;
+    font-size: 15px;
+    text-decoration: none;
+    color: #F9F7F6;
+    background-color: #C5523C;   
+    padding: 10px 30px;  
+    margin-left: 15px;
+    border: none;
+    cursor: pointer;
+}
+
+.thumbnail{
+    position: relative;
+    float: left;
+    width: 200px;
+    margin: 5%;
+    box-shadow: 3px 3px #B3B3B2;
+}
+
+.gallery{
+    width: 200px;   
+    padding: 0px;
+    margin: 0px;
+}
+
+.thumbnail-banner{
+    position: absolute;
+    bottom: 10px;
+    width: 200px;  
+    font-family: 'Roboto', sans-serif;
+    color: #F9F7F6;
+    background-color: #F06449;
+    padding: 8px 0px; 
+}
+
+footer{
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    font-family: 'Roboto Slab', serif;
+    color: #F9F7F6;
+    background-color: #838382;
+    padding: 10px 0px 10px 0px;
+    box-shadow: 0px -5px #F06449; 
+}
+
+aside{
+    position: relative;
+    float: right;
+    width: auto;  
+    background-color: #F9F7F6;    
+    padding: 20px;
+    margin-right: 9%;
+    margin-top: 60px;
+    box-shadow: 3px 3px #B3B3B2; 
+}
+
+.social{
+    width: 44px;
+    height: auto;
+    margin: 5px;
+}
+
+/* These pieces of code hide the scrollbar, taken from Stack Overflow, 
+here: https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while-still-being-able-to-scroll */
+
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
