@@ -87,7 +87,7 @@ div a:nth-child(3){
 
 .content{
     float: left;
-    clear: both;
+    clear: none;
     width: 40%;
     background-color: #F9F7F6;
     padding: 30px 40px;
@@ -95,10 +95,6 @@ div a:nth-child(3){
     margin-top: 30px;
     box-shadow: 3px 3px #B3B3B2;
     overflow: auto;
-}
-
-.about{
-    clear: none;
 }
 
 img{
@@ -157,7 +153,7 @@ input[type=text]:focus, select:focus, textarea:focus{
 }
 
 textarea{
-    width: auto;
+    width: 90%;
 }
 
 input[type=submit]{
@@ -249,4 +245,78 @@ here: https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while-sti
 /* optional: show position indicator in red */
 ::-webkit-scrollbar-thumb {
     background: #FF0000;
+}
+
+/* START MEDIA QUERIES */
+
+@media screen and (max-width: 980px){
+    
+    /* I couldn't think of anything to
+    change at 980 and 768 pixels wide
+    since nothing is displayed improperly
+    at those widths. */
+
+}
+
+@media screen and (max-width: 768px){
+    
+    /* I couldn't think of anything to
+    change at 980 and 768 pixels wide
+    since nothing is displayed improperly
+    at those widths. */
+    
+}
+
+@media screen and (max-width: 690px){
+
+    aside{
+        position: static;
+        float: none;
+        width: 87%;
+        margin: auto;
+        margin-top: 15px;
+    }
+
+    .social{
+        float: none;
+        margin: auto;
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .content{
+        width: 80%;
+        float: none;
+        margin: auto;
+        margin-top: 15px;
+        margin-bottom: 50px;
+    }
+
+    .nav-bar{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+@media screen and (max-width: 444px){
+
+    .nav-bar{
+        padding-top: 80px;
+        padding-bottom: 20px;
+        position: static;
+    }
+
+    .name-card{
+        top: -100px;
+        width: 100%;
+        text-align: center;
+        padding: 18px 0px;
+    }
+
+    .nav-item{
+        float: none;
+        top: 0px;
+        border: none;
+
+    }
 }
