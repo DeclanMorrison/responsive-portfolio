@@ -41,6 +41,7 @@ a{
 .nav-bar{
     position: sticky;
     top: 0px;
+    width: 100%;
     background-color: #F9F7F6;
     padding-top: 30px;
     padding-bottom: 30px;
@@ -223,7 +224,7 @@ aside{
     float: right;
     width: auto;  
     background-color: #F9F7F6;    
-    padding: 20px;
+    padding: 20px 20px;
     margin-right: 9%;
     margin-top: 60px;
     box-shadow: 3px 3px #B3B3B2; 
@@ -272,16 +273,15 @@ here: https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while-sti
     aside{
         position: static;
         float: none;
-        width: 87%;
+        width: 80%;
         margin: auto;
         margin-top: 15px;
+        padding: 20px 40px;
     }
 
     .social{
         float: none;
         margin: auto;
-        margin-left: 15px;
-        margin-right: 15px;
     }
 
     .content{
@@ -304,6 +304,7 @@ here: https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while-sti
         padding-top: 80px;
         padding-bottom: 20px;
         position: static;
+        width: 100%;
     }
 
     .name-card{
@@ -318,5 +319,13 @@ here: https://stackoverflow.com/questions/16670931/hide-scroll-bar-but-while-sti
         top: 0px;
         border: none;
 
+    }
+
+    .content{
+        width: auto;
+    }
+
+    aside{
+        width: auto;
     }
 }
