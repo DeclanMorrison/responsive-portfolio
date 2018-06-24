@@ -41,7 +41,7 @@ a{
 .nav-bar{
     position: sticky;
     top: 0px;
-    width: 100%;
+    width: auto;
     background-color: #F9F7F6;
     padding-top: 30px;
     padding-bottom: 30px;
